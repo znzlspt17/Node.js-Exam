@@ -16,4 +16,4 @@ process.stdin.on('data', function (data) {
 client.on('message', function (message) {
     console.log('Get message back:', message.toString());
 });
-console.log('Start typing to send message to %s:%s', host, port);
+console.log('Start typing to send message to %s:%s', "127.0.0.1", "4000");
