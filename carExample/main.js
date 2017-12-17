@@ -1,6 +1,7 @@
 var dgram = require('dgram');
 var xinput = require('./xinputjs');
-var util = require('util');
+
+
 var server = dgram.createSocket('udp4');
 var gaddress = null;
 var gport = null;
@@ -11,9 +12,7 @@ server.on('message', function (message, rinfo) {
         gaddress = rinfo.address;
         gport = rinfo.port;
         console.log("gaddress : %s / gport : %s", gaddress, gport);
-
     }
-    //    server.send(message, 0, message.length, rinfo.port, rinfo.address);
 });
 
 var port = 4000;
@@ -92,9 +91,9 @@ server.bind(port);
                 } else if (xValue = text.indexOf("x\":1,") != -1) {
                     goMsg = "R/999";
                 }
-                
+
             } else {
-                
+
                 if (xValue = text.indexOf("\"right\":1") != -1) {
                     goMsg = "A/999";
                 } else if (xValue = text.indexOf("\"right\":0.9") != -1) {
