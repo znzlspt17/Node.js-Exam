@@ -1,9 +1,0 @@
-﻿  XInputWrap.cc
-  XInputFunctions.cc
-  win_delay_load_hook.cc
-c:\program files (x86)\microsoft visual studio\installer\resources\app\node_modules\nan\nan_maybe_43_inl.h(112): warning C4996: 'v8::Object::ForceSet': deprecated로 선언되었습니다. (소스 파일 컴파일 중 ..\src\XInputFunctions.cc)
-c:\program files (x86)\microsoft visual studio\installer\resources\app\node_modules\nan\nan_maybe_43_inl.h(112): warning C4996: 'v8::Object::ForceSet': deprecated로 선언되었습니다. (소스 파일 컴파일 중 ..\src\XInputWrap.cc)
-  c:\users\znzlspt17\.node-gyp\9.2.0\include\node\v8.h(3117): note: 'v8::Object::ForceSet' 선언을 참조하십시오. (소스 파일 컴파일 중 ..\src\XInputFunctions.cc)
-  c:\users\znzlspt17\.node-gyp\9.2.0\include\node\v8.h(3117): note: 'v8::Object::ForceSet' 선언을 참조하십시오. (소스 파일 컴파일 중 ..\src\XInputWrap.cc)
-     C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\node_modules\xinputjs\build\Debug\xinput.lib 라이브러리 및 C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\node_modules\xinputjs\build\Debug\xinput.exp 개체를 생성하고 있습니다.
-  xinput.vcxproj -> C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\node_modules\xinputjs\build\Debug\\xinput.node
