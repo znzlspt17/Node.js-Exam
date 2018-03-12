@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.use(static(path.join(__dirname, 'public')));
+app.use(static(path.join(__dirname, '/')));
 
 router.route('/process/login/:name').post(function (req, res) {
     console.log('/process/login/:name 처리함.');
@@ -31,7 +31,7 @@ router.route('/process/login/:name').post(function (req, res) {
     res.write('<div><p>paramName : ' + paramName + '</p></div>');
     res.write('<div><p>paramId : ' + paramId + '</p></div>');
     res.write('<div><p>paramPassword : ' + paramPassword + '</p></div>');
-    res.write("<br><br><a href='/login3.html'>로그인 페이지로 돌아가기 </a>");
+    res.write("<br><br><a href='/public/login3.html'>로그인 페이지로 돌아가기 </a>");
     res.end();
 });
 
