@@ -63,7 +63,7 @@ var storage = multer.diskStorage({
 //파일제한 10개 1g
 var upload = multer({
     storage: storage,
-    limits: {
+    limits: {w
         files: 10,
         filesize: 1024 * 1024 * 1024
     }
